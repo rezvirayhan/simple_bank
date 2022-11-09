@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">   
+</head>
+<body>
+ <header>
+
+        <h1 class="text-5xl text-center mt-5">Let's Get
+            <span class="te xt-purple-700 font-bold"> Some Mony</span> Digital agency Bank !!</h1>
+    </header>
+
+    <main>
+        <section class="mt-8">
+            <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
+                <div class="bg-blue-400 p-8 rounded">
+                    <h3 class="text-3xl">Deposit</h3>
+                    <h4 class="text-2xl">$
+                        <span id="diposit-total" >00</span>
+                    </h4>
+                </div>
+                <div class="bg-green-400 p-8 rounded">
+                    <h3 class="text-3xl">Withdraw</h3>
+                    <h4 class="text-2xl">$
+                        <span id="withdraw-total">00</span>
+                    </h4>
+                </div>
+                <div class="bg-indigo-600 p-8 rounded">
+                    <h3 class="text-3xl">Balnce</h3>
+                    <h4 class="text-2xl">$ <span id="blance-total">1250</span></h4>
+                </div>
+                
+            </div>
+        </section>
+
+        <!-- Start Deposit Section  -->
+        <section class="mt-8">
+            <div class="grid grid-cols-2 w-3/4 mx-auto gap-4">
+                <div class="bg-blue-500 text-black p-5">
+                    <h2>Plz Deposit Your Mony</h2>
+                    <input type="text" placeholder="Your Current Mony" id="deposit-input">
+                    <button class="bg-gray-600 px-5 p-2 block mt-4 text-white" id="deposit-button">Deposit</button>
+                </div>
+                <div class="bg-purple-500 text-black p-5">
+                    <h2>Plz Withdraw</h2>
+                    <input class="" type="text" placeholder="Withdraw Amount" id="withdraw-input">
+                    <button class="bg-gray-600 px-5 p-2 block mt-4 text-white" id="withdraw-button">Withdraw</button>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="banking.js"></script>
+</body>
+</html>
